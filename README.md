@@ -1,6 +1,6 @@
 # vueadmintool
 
-> 一个vue的组件库，是学习经验的总结。
+> 一个vue的组件库，是学习经验的总结。希望对其他的帮有也有帮助。
 
 ## Build Setup
 
