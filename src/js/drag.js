@@ -7,5 +7,8 @@ function drag (id) {
         //鼠标按下时会怎么样
         disx = e.pageX - obj.offsetLeft;
         disy = e.pageY - obj.offsetTop;
+        document.onmousemove = function(ev){
+           obj.style.left = ex.clientX - disx + 'px'
+        }
     }
 }
