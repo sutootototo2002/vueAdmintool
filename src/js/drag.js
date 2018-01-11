@@ -8,7 +8,18 @@ function drag (id) {
         disx = e.pageX - obj.offsetLeft;
         disy = e.pageY - obj.offsetTop;
         document.onmousemove = function(ev){
+<<<<<<< HEAD
            obj.style.left = ex.clientX - disx + 'px'
         }
+=======
+            obj.style.top = ex.clientY - disy + 'px'
+         }
+    }
+    obj.onmousemove = function(){
+ 
+    }
+    obj.onmouseup = function(){
+        
+>>>>>>> new2
     }
 }
