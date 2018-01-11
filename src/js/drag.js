@@ -1,25 +1,25 @@
-function drag (id) {
+var drag = function(id) {
     //console.log("drag");
     var disx = 0;
     var disy = 0;//15点56分
-    var obj = document.getElementById(id);
-    obj.onmousedown = function(e){
+    var obj = window.document.getElementById(id);
+    alert(id+'--'+obj);
+    obj.onmousedown = function(ev){
         //鼠标按下时会怎么样
-        disx = e.pageX - obj.offsetLeft;
-        disy = e.pageY - obj.offsetTop;
+        disx = ev.pageX - obj.offsetLeft;
+        disy = ev.pageY - obj.offsetTop;
         document.onmousemove = function(ev){
-<<<<<<< HEAD
-           obj.style.left = ex.clientX - disx + 'px'
+           obj.style.left = ev.pageX - disx + 'px';
+           obj.style.top = ev.pageY - disy + 'px'
         }
-=======
-            obj.style.top = ex.clientY - disy + 'px'
-         }
+        document.onmouseup = function(ev){
+            document.onmousemove = null;
+            document.onmouseup = null;
+        }
     }
-    obj.onmousemove = function(){
- 
-    }
-    obj.onmouseup = function(){
-        
->>>>>>> new2
-    }
+    return false;
+}
+
+export default {
+    drag
 }
