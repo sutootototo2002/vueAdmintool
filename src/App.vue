@@ -15,8 +15,8 @@ export default {
 #div1{
   width:100px;
   height: 100px;
-  border:1px solid red;
-  
+  border:1px solid green;
+
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
